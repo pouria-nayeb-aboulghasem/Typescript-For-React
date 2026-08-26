@@ -1,6 +1,28 @@
-# TypeScript For React
+# Typescript
 
-## JavaScript topics
+Typescript is strongly type version and superset of Javascript language with additional features.
+
+## DataTypes
+
+### Value types
+
+- string
+- number
+- boolean
+- null
+- undefined
+- symbol
+- bigint
+
+### Reference types
+
+- array
+- object
+- function
+
+## TypeScript For React
+
+### JavaScript topics
 
 - variables
 - arrays
@@ -9,14 +31,14 @@
 - arrow functions
 - destructuring
 
-## TypeScript benefits
+### TypeScript benefits
 
 - static typing
 - code completion
 - refactoring
 - shorthand notations
 
-## Event
+### Event
 
 ```
     event: React.ChangeEvent<HTMLInputElement>
@@ -24,7 +46,7 @@
     children:React.ReactNode
 ```
 
-## Enum
+### Enum
 
 ```
     enum Countries = {
@@ -33,7 +55,7 @@
     }
 ```
 
-## Type of html return in react
+### Type of html return in react
 
 ```
     import type { JSX } from "react";
@@ -41,7 +63,7 @@
     export default function ConfettiContainer({ isGameWon }: { isGameWon:boolean }): JSX.Element | null { ... }
 ```
 
-## Remove one/many unnecessary props
+### Remove one/many unnecessary props
 
 ```
 
