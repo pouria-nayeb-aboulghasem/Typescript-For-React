@@ -20,6 +20,39 @@ Typescript is strongly type version and superset of Javascript language with add
 - object
 - function
 
+## Operators
+
+- arithmetic
+- assignment
+- comparison
+- conditional
+- logical
+- bitwise
+- type checking
+- object key/value iterator
+- instanceof
+
+## Make decision statements
+
+- if
+- if else
+- if if else else
+- switch case default
+- return
+- break
+- continue
+
+## Error handling
+
+- try catch finally
+- throw new Error(string | object);
+
+## Loops
+
+- for
+- while
+- do while
+
 ## TypeScript For React
 
 ### JavaScript topics
