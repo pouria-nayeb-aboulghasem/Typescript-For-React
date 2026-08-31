@@ -2,7 +2,7 @@
 const weight: number = 72.6;
 
 // number object
-const height: Number = new Number("1.72");
+const height: Number = new Number(1.72);
 height.valueOf();
 
 // ********
@@ -19,7 +19,7 @@ const temperature: number = 24.678;
 const scientificNotation: string = temperature.toExponential(2); // Output: 2.468e+1
 
 // convert number to string
-const weightInStringFormat = weight.toString();
+const weightInStringFormat: string = weight.toString();
 
 const localNumber: string = (1234.6).toLocaleString("fa-IR", {
   style: "currency",
