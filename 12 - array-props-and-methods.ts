@@ -1,14 +1,18 @@
-const emails: string[] = [
+const emails: Array<string> = [
   "wumwuoh@purkelfew.bv",
   "bem@vobep.ls",
   "dibda@ga.qa",
 ];
 
+// array props
+
+const emailCounts:number = emails.length; // Output: 3
+
 // array methods
 
 // add and remove
 const countOfEmails: number = emails.push("fi@watapuseg.tj"); // Output: 4
-const lastEmail: string | undefined = emails.pop(); // Output: "bem@vobep.ls"
+const lastEmail: string | undefined = emails.pop(); // Output: "fi@watapuseg.tj"
 
 const countsOfEmails: number = emails.unshift("bo@ma.tz"); // Output: 4
 const firstEmail: string | undefined = emails.shift(); // Output: "bo@ma.tz"
@@ -40,13 +44,20 @@ const lastMarkAbove30: number | undefined = marks.findLast((mark) => mark > 30);
 const filteredMarks: number[] = marks.filter((mark) => mark > 30); // Output: [40, 50]
 
 const totalMarks: number = marks.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
+  (total, currentValue) => total + currentValue,
   0,
 ); // Output: 150
 
 // ********
 
-const users = [
+type User = {
+  id: number;
+  phoneNumber: string;
+  fullName: string;
+  balance: number;
+};
+
+const users: User[] = [
   { id: 1, phoneNumber: "09966557685", fullName: "John Doe", balance: 1000 },
   { id: 2, phoneNumber: "09354425459", fullName: "Jane Smith", balance: 2000 },
   { id: 3, phoneNumber: "09966554433", fullName: "Mike Smith", balance: 1500 },
@@ -73,14 +84,15 @@ users.forEach((user) => {
 
 // *********
 
-const cart = [
+type CartItem = { id: number; name: string; price: number; quantity: number };
+
+const cart: CartItem[] = [
   { id: 1, name: "Microsoft surface laptop 4", price: 599.9, quantity: 2 },
   { id: 2, name: "Slim pen 2", price: 99.9, quantity: 1 },
   { id: 3, name: "Microsoft arc mouse", price: 49.9, quantity: 3 },
 ];
 
 const totalCart: number = cart.reduceRight(
-  (accumulator, currentItem) =>
-    accumulator + currentItem.price * currentItem.quantity,
+  (total, currentItem) => total + currentItem.price * currentItem.quantity,
   0,
 );
