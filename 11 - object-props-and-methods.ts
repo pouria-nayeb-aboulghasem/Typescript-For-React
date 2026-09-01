@@ -1,6 +1,9 @@
-const genre = { id: 1, title: "action" };
+const genre: {
+  id: number;
+  title: string;
+} = { id: 1, title: "action" };
 
-const genreObject = new Object({ id: 1, title: "action" });
+const genreObject:Object = new Object({ id: 1, title: "action" });
 genreObject.valueOf();
 
 // get properties
@@ -13,6 +16,9 @@ genre["id"]; // Output: 1
 // set properties
 genre.id = 2;
 genre.title = "drama";
+
+const newGenre: {id: number;
+  title: string;} = { ...genre, title: "comedy" }; // Output: { id: 1, title: "comedy" }
 
 // Object static methods
 
