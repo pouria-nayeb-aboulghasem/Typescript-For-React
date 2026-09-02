@@ -4,7 +4,7 @@ function calculateTax(income: number, taxRate: number): number {
 }
 
 // function expression
-const calculateTaxAnonymous = function (
+const calculateTaxExpression = function (
   income: number,
   taxRate: number,
 ): number {
@@ -23,9 +23,8 @@ const cartTotalPayment = (cart: Cart[]): number => {
 
 // recursive function
 function factorial(number: number): number {
-    // step 1: stop condition
-    if (number === 0 || number === 1)
-    return 1;
+  // step 1: stop condition
+  if (number === 0 || number === 1) return 1;
 
   // step 2: formula
   return number * factorial(number - 1);
