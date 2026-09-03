@@ -70,3 +70,12 @@ img.alt = "cover of a book";
 // *********
 
 // validation
+
+function factorial(number: number): number {
+  // validation
+  if (typeof number !== "number") throw new Error("Input must be a number");
+
+  if (number === 0 || number === 1) return 1;
+
+  return number * factorial(number - 1);
+}
