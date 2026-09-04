@@ -33,13 +33,13 @@ const checkbox = document.querySelector("#checkbox-id") as HTMLInputElement;
 const select = document.querySelector("#select-id") as HTMLSelectElement;
 
 // btn event
-btn.addEventListener("click", (event: MouseEvent) => {});
+// btn.addEventListener("click", (event: MouseEvent) => {});
 
-form.addEventListener("submit", (event: SubmitEvent) => {});
+// form.addEventListener("submit", (event: SubmitEvent) => {});
 
-input.addEventListener("input", (event: InputEvent) => {});
+// input.addEventListener("input", (event: InputEvent) => {});
 
-checkbox.addEventListener("change", (event: Event) => {});
+// checkbox.addEventListener("change", (event: Event) => {});
 
 // *********
 
@@ -79,3 +79,5 @@ function factorial(number: number): number {
 
   return number * factorial(number - 1);
 }
+
+export {};
