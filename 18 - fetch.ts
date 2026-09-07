@@ -7,7 +7,7 @@ type User = {
 
 // get all
 async function getUsers(url: string, jwt: string): Promise<User[]> {
-  const response = await fetch(`${url}`, {
+  const response = await fetch(url, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${jwt}`,
@@ -19,6 +19,8 @@ async function getUsers(url: string, jwt: string): Promise<User[]> {
 
   return (await response.json()) as User[];
 }
+
+// ********
 
 // get one
 async function getUser(id: number, url: string, jwt: string): Promise<User> {
@@ -35,9 +37,11 @@ async function getUser(id: number, url: string, jwt: string): Promise<User> {
   return (await response.json()) as User;
 }
 
+// ********
+
 // create
 async function createUser(user: User, url: string, jwt: string): Promise<User> {
-  const response = await fetch(`${url}`, {
+  const response = await fetch(url, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${jwt}`,
@@ -51,6 +55,8 @@ async function createUser(user: User, url: string, jwt: string): Promise<User> {
 
   return (await response.json()) as User;
 }
+
+// ********
 
 // update
 async function editUser(
@@ -73,6 +79,8 @@ async function editUser(
 
   return (await response.json()) as User;
 }
+
+// ********
 
 // delete
 async function deleteUser(id: number, url: string, jwt: string): Promise<User> {
