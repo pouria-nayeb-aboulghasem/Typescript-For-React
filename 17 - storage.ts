@@ -3,6 +3,7 @@
 // value type
 localStorage.setItem("theme", "dark");
 localStorage.getItem("theme");
+localStorage.removeItem("theme");
 
 // reference type
 
@@ -15,7 +16,7 @@ type User = {
 };
 
 // step 2: create an object of that type`
-const user = {
+const user: User = {
   name: "Pouria Nayeb",
   email: "hunnuw@kup.tm",
   phone: "09966557685",
