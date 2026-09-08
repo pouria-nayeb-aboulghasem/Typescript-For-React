@@ -48,7 +48,7 @@ async function createUser(user: User, url: string, jwt: string): Promise<User> {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ user }),
+    body: JSON.stringify(user),
   });
 
   if (!response.ok) throw new Error(response.statusText);
@@ -72,7 +72,7 @@ async function editUser(
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ user }),
+    body: JSON.stringify(user),
   });
 
   if (!response.ok) throw new Error(response.statusText);
@@ -85,7 +85,7 @@ async function editUser(
 // delete
 async function deleteUser(id: number, url: string, jwt: string): Promise<User> {
   const response = await fetch(`${url}/${id}`, {
-    method: "PUT",
+    method: "DELETE",
     headers: {
       Authorization: `Bearer ${jwt}`,
       Accept: "application/json",
