@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Navy Suit",
+    "count": 1,
+    "price": 249.99,
+    "color": "Navy",
+    "size": "L",
+    "brand": "Gentleman"
+  },
+  {
+    "id": 2,
+    "title": "Slim Fit White Shirt",
+    "count": 2,
+    "price": 49.99,
+    "color": "White",
+    "size": "M",
+    "brand": "Oxford"
+  },
+  {
+    "id": 3,
+    "title": "Italian Leather Loafers",
+    "count": 1,
+    "price": 129.99,
+    "color": "Brown",
+    "size": "42",
+    "brand": "Berluti"
+  },
+  {
+    "id": 4,
+    "title": "Wool Blend Overcoat",
+    "count": 1,
+    "price": 199.99,
+    "color": "Charcoal",
+    "size": "XL",
+    "brand": "Hugo"
+  },
+  {
+    "id": 5,
+    "title": "Silk Classic Tie",
+    "count": 3,
+    "price": 29.99,
+    "color": "Burgundy",
+    "size": "One Size",
+    "brand": "Montique"
+  },
+  {
+    "id": 6,
+    "title": "Leather Dress Belt",
+    "count": 1,
+    "price": 39.99,
+    "color": "Black",
+    "size": "34",
+    "brand": "Calvin"
+  },
+  {
+    "id": 7,
+    "title": "Slim Fit Trousers",
+    "count": 1,
+    "price": 79.99,
+    "color": "Gray",
+    "size": "32",
+    "brand": "Tailor"
+  },
+  {
+    "id": 8,
+    "title": "Cotton Polo Shirt",
+    "count": 2,
+    "price": 34.99,
+    "color": "Black",
+    "size": "L",
+    "brand": "Lacoste"
+  },
+  {
+    "id": 9,
+    "title": "Cashmere Scarf",
+    "count": 1,
+    "price": 59.99,
+    "color": "Beige",
+    "size": "One Size",
+    "brand": "Burberry"
+  },
+  {
+    "id": 10,
+    "title": "Classic Leather Briefcase",
+    "count": 1,
+    "price": 179.99,
+    "color": "Dark Brown",
+    "size": "One Size",
+    "brand": "Samsonite"
+  }
+]
