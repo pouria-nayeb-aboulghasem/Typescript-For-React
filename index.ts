@@ -71,7 +71,7 @@ const cart: CartItem[] = [
   { id: 3, name: "Microsoft arc mouse", price: 49.9, quantity: 3 },
 ];
 
-const totalCart: number = cart.reduceRight(
+const totalCart: number = cart.reduce(
   (total, currentItem) => total + currentItem.price * currentItem.quantity,
   0,
 );
